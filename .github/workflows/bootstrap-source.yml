@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - site-source.zip.part-*
+      - source-import-trigger.txt
 
 permissions:
   contents: write
@@ -17,7 +18,8 @@ jobs:
         run: |
           cat site-source.zip.part-* > site-source.zip
           unzip -o site-source.zip
-          rm site-source.zip site-source.zip.part-*
+          rm site-source.zip site-source.zip.part-* source-import-trigger.txt
+          rm -f .github/workflows/deploy-pages.yml
       - name: Commit source
         run: |
           git config user.name "github-actions[bot]"
