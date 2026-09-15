@@ -3,7 +3,7 @@ name: Import portfolio source
 on:
   push:
     paths:
-      - site-source.zip
+      - site-source.zip.part-*
 
 permissions:
   contents: write
@@ -15,8 +15,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Unpack source
         run: |
+          cat site-source.zip.part-* > site-source.zip
           unzip -o site-source.zip
-          rm site-source.zip
+          rm site-source.zip site-source.zip.part-*
       - name: Commit source
         run: |
           git config user.name "github-actions[bot]"
