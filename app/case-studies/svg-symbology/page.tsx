@@ -45,7 +45,7 @@ export default function SvgSymbologyCaseStudy(){return <main className="svg-case
   <p>That makes SVG especially useful for GIS. The same asset can remain crisp as it scales, stay lightweight, and be edited at the geometry or style level instead of repeatedly recreating a raster image.</p></div>
   <div className="svg-language">
     <div className="svg-render"><span>THE SYMBOL</span><img src="/case-study/svg-symbology/fire-hydrant-classic.svg" alt="Custom fire hydrant SVG"/></div>
-    <div className="svg-code"><span>THE LANGUAGE BEHIND IT</span><div className="svg-typewriter" aria-label="Animated SVG markup"><pre><code>{svgLines.map((line,i)=><span className="svg-typed-line" style={{"--line":i} as React.CSSProperties} key={i}>{line}</span>)}</code></pre><i aria-hidden="true"/></div><small className="svg-motion-caption">XML markup · typed line by line</small></div>
+    <div className="svg-code"><span>THE LANGUAGE BEHIND IT</span><div className="svg-typewriter" aria-label="Animated SVG markup"><pre><code>{svgLines.map((line,i)=><span className="svg-typed-line" style={{"--line":i} as React.CSSProperties} key={i}>{line}</span>)}</code></pre><i aria-hidden="true"/></div></div>
   </div>
   <div className="svg-code-key">
     <p><code>viewBox</code><span>the coordinate system</span></p><p><code>path</code><span>the vector geometry</span></p><p><code>d</code><span>instructions that construct the shape</span></p><p><code>fill</code><span>the symbol color</span></p><p><code>fill-rule</code><span>how overlapping path areas are filled</span></p>
