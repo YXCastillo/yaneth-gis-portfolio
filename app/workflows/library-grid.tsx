@@ -6,7 +6,7 @@ const caseStudies=[
   {slug:"/case-studies/custom-web-gis",number:"05",lens:"Custom Web GIS",title:"Turning 51 layers into one navigable system",question:"How do you preserve a complex planning dataset while making it usable for a public audience?",tools:["JSON","Sanity","Layer architecture"],tone:"sand"},
   {slug:"/case-studies/municipal-cartography",number:"07",lens:"Municipal Cartography",title:"Making municipal complexity legible",question:"How do you hold overlapping jurisdictions, infrastructure, imagery, and local context in one readable exhibit?",tools:["ArcGIS Pro","Symbology","Visual hierarchy"],tone:"teal"}
 ];
-const creative=[{slug:"/case-studies/portfolio",number:"06",lens:"Creative Technology",title:"Designing a portfolio that behaves like a map",question:"How can a GIS portfolio demonstrate spatial thinking before a visitor reads a single project?",tools:["React","TypeScript","CSS + SVG"],tone:"ink"}];
+const creative=[{slug:"/case-studies/portfolio",number:"06",lens:"Creative Technology",title:"Designing a portfolio that behaves like a map",question:"How can a GIS portfolio demonstrate spatial thinking before a visitor reads a single project?",tools:["React","TypeScript","CSS + SVG"],tone:"ink"},{slug:"/case-studies/svg-symbology",number:"08",lens:"Creative Technology",title:"Building the symbols the map is missing",question:"How do you make a map speak a visual language the software doesn’t provide?",tools:["SVG","ArcGIS","Vector Design"],tone:"plum"}];
 
 const previews:Record<string,string>={
   "site-feasibility":"/parcel-civil.webp",
@@ -15,6 +15,7 @@ const previews:Record<string,string>={
   "public-facing-web-gis":"/parcel-public.webp",
   "/case-studies/custom-web-gis":"/case-study/dcol/dcol-overview-sanitized.png",
   "/case-studies/portfolio":"/hero-gis-map-artwork-v1.webp",
+  "/case-studies/svg-symbology":"/hero-gis-map-artwork-v1.webp",
   "/case-studies/municipal-cartography":"/case-study/municipal-cartography/sanitized-map.webp"
 };
 
