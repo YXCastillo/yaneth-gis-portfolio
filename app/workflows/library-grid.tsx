@@ -9,7 +9,7 @@ const caseStudies=[
 const creative=[{slug:"/case-studies/portfolio",number:"06",lens:"Creative Technology",title:"Designing a portfolio that behaves like a map",question:"How can a GIS portfolio demonstrate spatial thinking before a visitor reads a single project?",tools:["React","TypeScript","CSS + SVG"],tone:"ink"},{slug:"/case-studies/svg-symbology",number:"08",lens:"Creative Technology",title:"Building custom SVG symbology for GIS",question:"How do you make a map speak a visual language the software doesn’t provide?",tools:["SVG","ArcGIS","Vector Design"],tone:"plum"}];
 
 const previews:Record<string,string>={
-  "site-feasibility":"/work-library/site-feasibility-rich.svg",
+  "site-feasibility":"/work-library/site-feasibility-rich.webp",
   "public-facing-web-gis":"/work-library/public-web-gis-rich.svg",
   "/case-studies/custom-web-gis":"/case-study/dcol/dcol-overview-sanitized.png",
   "/case-studies/portfolio":"/hero-gis-map-artwork-v1.webp",
