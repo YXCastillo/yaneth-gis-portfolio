@@ -1,41 +1,32 @@
 import type {Metadata} from "next";
 
 export const metadata:Metadata={
-  title:"Building the Symbols the Map Is Missing | Yaneth Castillo",
+  title:"Building Custom SVG Symbology for GIS | Yaneth Castillo",
   description:"A creative-technology case study in custom SVG symbology, vector geometry, GIS implementation, and cartographic design."
 };
 
-const svgMarkup=`<svg viewBox="0 0 120 120"
-  xmlns="http://www.w3.org/2000/svg">
-  <g fill="none"
-     stroke="currentColor"
-     strokeWidth="6"
-     strokeLinecap="round"
-     strokeLinejoin="round">
-    <path d="M43 38h34v19H43z" />
-    <path d="M49 38V27h22v11" />
-    <path d="M39 57h42v35H39z" />
-    <path d="M32 65h7M81 65h7" />
-    <path d="M28 61v8M92 61v8" />
-    <path d="M48 92v12M72 92v12" />
-  </g>
+const svgMarkup=`<svg xmlns="http://www.w3.org/2000/svg"
+  width="300" height="360"
+  viewBox="0 0 300 360">
+  <path
+    fill="#8E2748"
+    fill-rule="evenodd"
+    d="M139 12 C139 4 145 0 150 0
+       C155 0 161 4 161 12 L161 22
+       C193 27 217 48 224 80 ..."
+  />
 </svg>`;
 
 function HydrantSymbol({className=""}:{className?:string}){
-  return <svg className={className} viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="Simplified custom hydrant SVG example">
-    <g fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M43 38h34v19H43z"/><path d="M49 38V27h22v11"/><path d="M39 57h42v35H39z"/>
-      <path d="M32 65h7M81 65h7"/><path d="M28 61v8M92 61v8"/><path d="M48 92v12M72 92v12"/>
-    </g>
-  </svg>
+  return <img className={className} src="/case-study/svg-symbology/fire-hydrant-classic.svg" alt="Custom fire hydrant SVG"/>
 }
 
 export default function SvgSymbologyCaseStudy(){return <main className="svg-case">
 <nav className="library-nav"><a className="mark" href="/">YC<span>°</span></a><div><a href="/">Home</a><a href="/workflows">Work Library</a></div></nav>
 
 <header className="svg-case-hero">
-  <div><p>CASE STUDY 08 · CREATIVE TECHNOLOGY</p><h1>Building the symbols<br/>the map is missing.</h1><p>SVG · Vector geometry · ArcGIS · Cartographic design</p></div>
-  <div className="svg-hero-symbol" aria-hidden="true"><HydrantSymbol/><span>SVG</span></div>
+  <div><p>CASE STUDY 08 · CREATIVE TECHNOLOGY</p><h1>Building custom SVG<br/>symbology for GIS.</h1><p>SVG · Vector geometry · ArcGIS · Cartographic design</p></div>
+  <div className="svg-hero-symbol" aria-hidden="true"><img src="/case-study/svg-symbology/fire-hydrant-classic.svg" alt=""/><span>SVG</span></div>
 </header>
 
 <section className="svg-thesis">
@@ -51,7 +42,7 @@ export default function SvgSymbologyCaseStudy(){return <main className="svg-case
   <p>An SVG is not simply a picture exported at a particular resolution. It is an XML-based description of vector geometry: paths, coordinates, fills, strokes, transformations, and other properties that tell a renderer how to construct the graphic.</p>
   <p>That makes SVG especially useful for GIS. The same asset can remain crisp as it scales, stay lightweight, and be edited at the geometry or style level instead of repeatedly recreating a raster image.</p></div>
   <div className="svg-language">
-    <div className="svg-render"><span>THE SYMBOL</span><HydrantSymbol/></div>
+    <div className="svg-render"><span>THE SYMBOL</span><img src="/case-study/svg-symbology/fire-hydrant-classic.svg" alt="Custom fire hydrant SVG"/></div>
     <div className="svg-code"><span>THE LANGUAGE BEHIND IT</span><pre><code>{svgMarkup}</code></pre></div>
   </div>
   <div className="svg-code-key">
@@ -64,9 +55,9 @@ export default function SvgSymbologyCaseStudy(){return <main className="svg-case
   <p>FROM REFERENCE → CODE → MAP</p>
   <h2>The asset is only useful<br/>when it survives the whole journey.</h2>
   <div className="svg-pipeline-grid">
-    <article><b>01</b><span>REFERENCE</span><div className="reference-mark"><i/><i/><i/></div><p>Identify the geometry and visual characteristics that make the source recognizable.</p></article>
+    <article><b>01</b><span>REFERENCE</span><div className="esri-hydrant-reference" aria-label="Esri stock hydrant reference"><span>ESRI</span><strong>HYDRANTS</strong><small>stock symbol reference</small></div><p>Identify the geometry and visual characteristics that make the source recognizable.</p></article>
     <article><b>02</b><span>VECTOR</span><HydrantSymbol/><p>Reduce the reference to scalable geometry that remains legible at map scale.</p></article>
-    <article><b>03</b><span>MARKUP</span><pre><code>&lt;path d="…" /&gt;{"\n"}&lt;path d="…" /&gt;{"\n"}&lt;path d="…" /&gt;</code></pre><p>Control the asset through XML-based SVG structure rather than fixed pixels.</p></article>
+    <article><b>03</b><span>MARKUP</span><pre><code>&lt;path fill="#8E2748"{"\n"} fill-rule="evenodd"{"\n"} d="M139 12 C139 4…" /&gt;</code></pre><p>Control the asset through XML-based SVG structure rather than fixed pixels.</p></article>
     <article><b>04</b><span>MAP</span><div className="mini-map"><i/><i/><i/><HydrantSymbol/></div><p>Test size, contrast, anchoring, labels, and surrounding map context.</p></article>
   </div>
 </section>
@@ -85,8 +76,8 @@ export default function SvgSymbologyCaseStudy(){return <main className="svg-case
 <section className="svg-applications">
   <p>ONE TECHNIQUE · VERY DIFFERENT APPLICATIONS</p>
   <div className="svg-app-grid">
-    <article><span>MUNICIPAL ASSET SYMBOLOGY</span><h2>Custom fire hydrant symbol</h2><p>A municipal utility dataset called for a more distinctive hydrant symbol than the stock options provided. The challenge was recognizability at small map scales without excessive detail.</p><blockquote>Build a reusable vector asset tailored to the feature being represented.</blockquote></article>
-    <article><span>REFERENCE-DRIVEN CARTOGRAPHY</span><h2>FEMA-style symbology</h2><p>Here the goal is different: not inventing a new visual language, but translating an established cartographic convention into an interactive GIS environment while preserving clarity.</p><blockquote>Make the digital map feel consistent with information users already recognize.</blockquote></article>
+    <article><span>MUNICIPAL ASSET SYMBOLOGY</span><img className="svg-app-art hydrant" src="/case-study/svg-symbology/fire-hydrant-classic.svg" alt="Burgundy custom fire hydrant SVG"/><h2>Custom fire hydrant symbol</h2><p>A municipal utility dataset called for a more distinctive hydrant symbol than the stock options provided. The challenge was recognizability at small map scales without excessive detail.</p><blockquote>Build a reusable vector asset tailored to the feature being represented.</blockquote></article>
+    <article><span>REFERENCE-DRIVEN CARTOGRAPHY</span><img className="svg-app-art fema" src="/case-study/svg-symbology/fema-bfe-wave.svg" alt="Teal FEMA BFE wave marker SVG"/><h2>FEMA-style symbology</h2><p>Here the goal is different: not inventing a new visual language, but translating an established cartographic convention into an interactive GIS environment while preserving clarity.</p><blockquote>Make the digital map feel consistent with information users already recognize.</blockquote></article>
   </div>
 </section>
 
