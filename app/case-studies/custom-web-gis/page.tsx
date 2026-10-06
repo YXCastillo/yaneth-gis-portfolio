@@ -2,7 +2,7 @@ import type {Metadata} from "next";
 
 export const metadata:Metadata={
   title:"Custom Web GIS Case Study | Yaneth Castillo, GISP",
-  description:"An anonymized case study of a configuration-driven public Web GIS viewer with 51 layers, dual map styles, JSON, and Sanity."
+  description:"An anonymized case study of a configuration-driven public Web GIS viewer with 133 layers, dual map styles, JSON, and Sanity."
 };
 
 const decisions=[
@@ -16,7 +16,7 @@ export default function CustomWebGisCaseStudy(){return <main className="webgis-c
   <nav className="library-nav webgis-nav"><a className="mark" href="/">YC<span>°</span></a><div><a href="/">Home</a><a href="/workflows">Work Library</a><a href="/#contact">Contact</a></div></nav>
 
   <header className="webgis-hero">
-    <div><p>CASE STUDY 05 · CUSTOM WEB GIS</p><h1>Turning 51 layers into one navigable system.</h1></div>
+    <div><p>CASE STUDY 05 · CUSTOM WEB GIS</p><h1>Turning 133 layers into one navigable system.</h1></div>
     <aside><p>A configuration-driven public viewer built with JSON and managed through Sanity.</p><div><span>JSON</span><span>Sanity</span><span>Layer architecture</span><span>Public Web GIS</span></div></aside>
   </header>
 
@@ -27,14 +27,14 @@ export default function CustomWebGisCaseStudy(){return <main className="webgis-c
 
   <section className="webgis-brief">
     <div><p>THE PROBLEM</p><h2>The complexity was real.<br/>The interface still had to feel usable.</h2></div>
-    <div><p>The viewer brought together 51 planning, transportation, design, community, and environmental layers. The goal was not to hide that complexity. It was to give it a hierarchy: sensible groups, predictable toggles, useful legends, and two coherent map styles.</p></div>
+    <div><p>The viewer brought together 133 planning, transportation, design, community, and environmental layers. The goal was not to hide that complexity. It was to give it a hierarchy: sensible groups, predictable toggles, useful legends, and two coherent map styles.</p></div>
   </section>
 
   <section className="webgis-inherited">
     <p>HOW I WORKED</p><h2>Reuse was the starting point.<br/>Judgment was the work.</h2>
     <div>
       <article><span>01</span><h3>What I inherited</h3><p>Proven configuration patterns from existing viewers and Martin Palacios’s technical framework for understanding how the JSON, application, and Sanity implementation connected.</p></article>
-      <article><span>02</span><h3>What I changed</h3><p>I copied, adapted, and extended those patterns for this project; configured 51 layers; maintained separate aerial and street-map files; and added the project-specific hierarchy and behavior.</p></article>
+      <article><span>02</span><h3>What I changed</h3><p>I copied, adapted, and extended those patterns for this project; configured 133 layers; maintained separate aerial and street-map files; and added the project-specific hierarchy and behavior.</p></article>
       <article><span>03</span><h3>What I learned</h3><p>Troubleshooting made the architecture legible: how a layer definition moves through source, metadata, layout, paint, visibility, identify behavior, and the public legend.</p></article>
     </div>
   </section>
@@ -59,9 +59,9 @@ export default function CustomWebGisCaseStudy(){return <main className="webgis-c
     <div className="webgis-proof"><img src="/case-study/dcol/dcol-sanity-sanitized.png" alt="An anonymized Sanity project configuration with Aerial and Streets map styles and application toggles"/><p>Project configuration in Sanity.</p></div>
   </section>
 
-  <section className="webgis-mentorship"><p>MENTORED WORK · HONEST CREDIT</p><h2>Martin taught me the architecture.<br/>I applied it, adapted it, troubleshot it, and extended it.</h2><p>This was mentored work—not a solo invention. Martin Palacios gave me the technical framework and patient guidance that allowed me to begin understanding configuration-driven Web GIS. I used that framework to implement this 51-layer viewer, maintain its two map styles, and become more independent as I solved new nesting, visibility, legend, and project requirements.</p></section>
+  <section className="webgis-mentorship"><p>MENTORED WORK · HONEST CREDIT</p><h2>Martin taught me the architecture.<br/>I applied it, adapted it, troubleshot it, and extended it.</h2><p>This was mentored work—not a solo invention. Martin Palacios gave me the technical framework and patient guidance that allowed me to begin understanding configuration-driven Web GIS. I used that framework to implement this 133-layer viewer, maintain its two map styles, and become more independent as I solved new nesting, visibility, legend, and project requirements.</p></section>
 
-  <section className="webgis-outcome"><p>THE OUTCOME</p><h2>One public viewer.<br/>Two map styles.<br/>Fifty-one layers with a way through.</h2><p>The evidence is not that I typed every line from scratch. It is that I could enter an established system, understand enough of its structure to adapt it responsibly, diagnose what did not work, and extend it for a substantially more complex project.</p></section>
+  <section className="webgis-outcome"><p>THE OUTCOME</p><h2>One public viewer.<br/>Two map styles.<br/>One hundred thirty-three layers with a way through.</h2><p>The evidence is not that I typed every line from scratch. It is that I could enter an established system, understand enough of its structure to adapt it responsibly, diagnose what did not work, and extend it for a substantially more complex project.</p></section>
 
   <nav className="workflow-next"><a href="/workflows">← Work Library</a><a href="/case-studies/portfolio">Next case study →</a></nav>
   <footer className="library-footer"><p>Have a spatial question<br/>worth following?</p><a href="mailto:hello@yanethcastillo.com">Let’s map it out ↗</a><div><span>Yaneth Castillo, GISP</span><span>© 2026</span></div></footer>
