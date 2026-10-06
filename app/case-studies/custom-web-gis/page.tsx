@@ -21,7 +21,7 @@ export default function CustomWebGisCaseStudy(){return <main className="webgis-c
   </header>
 
   <section className="webgis-proof webgis-proof-hero">
-    <img src="/case-study/dcol/dcol-overview-sanitized.png" alt="An anonymized public Web GIS viewer displaying many planning and transportation layers"/>
+    <img src="/case-study/dcol/dcol-overview-sanitized.webp" alt="An anonymized public Web GIS viewer displaying many planning and transportation layers"/>
     <p>Project details and geography have been anonymized for client privacy.</p>
   </section>
 

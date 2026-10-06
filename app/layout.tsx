@@ -21,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head><link rel="preload" as="image" href="/hero-gis-map-artwork-v1.webp" type="image/webp"/></head>
       <body className="antialiased">{children}<BackToTop/></body>
     </html>
   );

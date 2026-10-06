@@ -11,7 +11,7 @@ const creative=[{slug:"/case-studies/portfolio",number:"06",lens:"Creative Techn
 const previews:Record<string,string>={
   "site-feasibility":"/work-library/site-feasibility-rich.webp",
   "public-facing-web-gis":"/work-library/public-web-gis-rich.webp",
-  "/case-studies/custom-web-gis":"/case-study/dcol/dcol-overview-sanitized.png",
+  "/case-studies/custom-web-gis":"/case-study/dcol/dcol-overview-sanitized.webp",
   "/case-studies/portfolio":"/hero-gis-map-artwork-v1.webp",
   "/case-studies/svg-symbology":"/work-library/svg-symbology-rich.webp",
   "/case-studies/municipal-cartography":"/case-study/municipal-cartography/sanitized-map.webp"
