@@ -3,7 +3,7 @@ import {useState} from "react";
 import {workflows} from "./workflow-data";
 
 const caseStudies=[
-  {slug:"/case-studies/custom-web-gis",number:"05",lens:"Custom Web GIS",title:"Turning 51 layers into one navigable system",question:"How do you preserve a complex planning dataset while making it usable for a public audience?",tools:["JSON","Sanity","Layer architecture"],tone:"sand"},
+  {slug:"/case-studies/custom-web-gis",number:"05",lens:"Custom Web GIS",title:"Turning 133 layers into one navigable system",question:"How do you preserve a complex planning dataset while making it usable for a public audience?",tools:["JSON","Sanity","Layer architecture"],tone:"sand"},
   {slug:"/case-studies/municipal-cartography",number:"07",lens:"Municipal Cartography",title:"Making municipal complexity legible",question:"How do you hold overlapping jurisdictions, infrastructure, imagery, and local context in one readable exhibit?",tools:["ArcGIS Pro","Symbology","Visual hierarchy"],tone:"teal"}
 ];
 const creative=[{slug:"/case-studies/portfolio",number:"06",lens:"Creative Technology",title:"Designing a portfolio that behaves like a map",question:"How can a GIS portfolio demonstrate spatial thinking before a visitor reads a single project?",tools:["React","TypeScript","CSS + SVG"],tone:"ink"},{slug:"/case-studies/svg-symbology",number:"08",lens:"Creative Technology",title:"Building custom SVG symbology for GIS",question:"How do you make a map speak a visual language the software doesn’t provide?",tools:["SVG","ArcGIS","Vector Design"],tone:"plum"}];
