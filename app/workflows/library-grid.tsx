@@ -10,7 +10,6 @@ const creative=[{slug:"/case-studies/portfolio",number:"06",lens:"Creative Techn
 
 const previews:Record<string,string>={
   "site-feasibility":"/parcel-civil.webp",
-  "ordinances-to-gis":"/parcel-municipality.webp",
   "public-facing-web-gis":"/parcel-public.webp",
   "/case-studies/custom-web-gis":"/case-study/dcol/dcol-overview-sanitized.png",
   "/case-studies/portfolio":"/hero-gis-map-artwork-v1.webp",
