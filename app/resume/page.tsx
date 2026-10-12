@@ -7,13 +7,13 @@ export const metadata: Metadata = {
 
 const roles = [
   {
-    dates: "FEB 2024—PRESENT",
+    dates: "JAN 2024—PRESENT",
     title: "GIS Analyst",
     company: "LJA Engineering · Dallas, Texas",
     points: [
       "Develop GIS deliverables and public-facing mapping for land development, utilities, transportation, municipal planning, and regulatory work.",
       "Reconstructed a 224.109-acre service-area tract from 109 metes-and-bounds courses, matched the boundary survey acreage, and identified an approximately 0.65-acre discrepancy in a reference dataset.",
-      "Adapted and extended JSON configurations for a custom 51-layer public Web GIS viewer, maintaining separate aerial and street-map variants and configuring nested layer, legend, and visibility behavior.",
+      "Adapted and extended JSON configurations for a custom 133-layer public Web GIS viewer, maintaining separate aerial and street-map variants and configuring nested layer, legend, and visibility behavior.",
       "Build and maintain ArcGIS Online and Experience Builder applications using hosted feature layers, vector tiles, Arcade expressions, permissions, and documented handoffs.",
       "Troubleshoot GIS data integration involving enterprise geodatabase schemas, field mapping, coded-value domains, and versioned datasets for municipal infrastructure deliverables.",
     ],
@@ -77,7 +77,7 @@ export default function ResumePage() {
       <section className="resume-summary">
         <p>PROFILE</p>
         <div>
-          <h2>I make complicated spatial work understandable—and dependable.</h2>
+          <h2>I make complicated spatial work understandable &amp; dependable.</h2>
           <p>My work began in geoscience and spatial analysis, then moved through GIS production, legal-description research, cartographic communication, Web GIS publishing, and configuration-driven applications. My focus is on dependable GIS applications, data integrity, and scalable systems that serve technical, client, and public audiences.</p>
         </div>
       </section>
