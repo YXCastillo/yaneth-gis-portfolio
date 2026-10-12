@@ -11,11 +11,11 @@ const roles = [
     title: "GIS Analyst",
     company: "LJA Engineering · Dallas, Texas",
     points: [
-      "Develop GIS deliverables and public-facing mapping for land development, utilities, transportation, municipal planning, and regulatory work.",
-      "Reconstructed a 224.109-acre service-area tract from 109 metes-and-bounds courses, matched the boundary survey acreage, and identified an approximately 0.65-acre discrepancy in a reference dataset.",
-      "Adapted and extended JSON configurations for a custom 133-layer public Web GIS viewer, maintaining separate aerial and street-map variants and configuring nested layer, legend, and visibility behavior.",
-      "Build and maintain ArcGIS Online and Experience Builder applications using hosted feature layers, vector tiles, Arcade expressions, permissions, and documented handoffs.",
-      "Troubleshoot GIS data integration involving enterprise geodatabase schemas, field mapping, coded-value domains, and versioned datasets for municipal infrastructure deliverables.",
+      "Deliver GIS solutions across transportation, utilities, land development, municipal planning, and regulatory projects, translating complex spatial requirements into reliable datasets, interactive applications, and client-facing deliverables.",
+      "Reconstruct and validate complex legal boundaries from survey documentation, including a 224.109-acre tract defined by 109 metes-and-bounds courses, identifying a 0.65-acre discrepancy in reference data.",
+      "Configure and enhance a public-facing Web GIS platform supporting 133 spatial layers, maintaining separate aerial and street-map configurations with structured layer hierarchies, interactive legends, and visibility controls.",
+      "Develop and maintain ArcGIS Online and Experience Builder applications, incorporating hosted feature services, vector tile layers, Arcade expressions, and access controls to support internal and public-facing workflows.",
+      "Integrate and troubleshoot municipal infrastructure datasets within enterprise GIS environments, resolving schema incompatibilities, field mapping requirements, coded-value domains, and versioned geodatabase constraints.",
     ],
   },
   {
