@@ -1,0 +1,31 @@
+name: Refresh downloadable resumes
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update-resume-downloads.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install python-docx
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq libreoffice-writer
+      - run: python scripts/update-resume-downloads.py
+      - name: Commit updated downloadable PDF and DOCX
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/resume/Yaneth-Castillo-GISP-Resume.pdf public/resume/Yaneth-Castillo-GISP-Resume.docx
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh downloadable résumé PDF and DOCX"
+            git push
+          fi
