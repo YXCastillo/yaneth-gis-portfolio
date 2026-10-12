@@ -13,9 +13,9 @@ const roles = [
     points: [
       "Develop GIS deliverables and public-facing mapping for land development, utilities, transportation, municipal planning, and regulatory work.",
       "Reconstructed a 224.109-acre service-area tract from 109 metes-and-bounds courses, matched the boundary survey acreage, and identified an approximately 0.65-acre discrepancy in a reference dataset.",
-      "Adapted and extended JSON configurations for a custom 51-layer public Web GIS viewer, maintained separate aerial and street-map variants, and configured nested layer, legend, and visibility behavior with technical mentorship.",
+      "Adapted and extended JSON configurations for a custom 51-layer public Web GIS viewer, maintaining separate aerial and street-map variants and configuring nested layer, legend, and visibility behavior.",
       "Build and maintain ArcGIS Online and Experience Builder applications using hosted feature layers, vector tiles, Arcade expressions, permissions, and documented handoffs.",
-      "Create client-facing cartographic exhibits that turn municipal boundaries, precincts, ETJs, transportation, airports, channels, and imagery into clear visual narratives.",
+      "Troubleshoot GIS data integration involving enterprise geodatabase schemas, field mapping, coded-value domains, and versioned datasets for municipal infrastructure deliverables.",
     ],
   },
   {
@@ -78,7 +78,7 @@ export default function ResumePage() {
         <p>PROFILE</p>
         <div>
           <h2>I make complicated spatial work understandable—and dependable.</h2>
-          <p>My work began in geoscience and spatial analysis, then moved through GIS production, legal-description research, cartographic communication, Web GIS publishing, and configuration-driven applications. I am growing toward enterprise GIS and systems ownership without losing sight of the people who need to understand and use the result.</p>
+          <p>My work began in geoscience and spatial analysis, then moved through GIS production, legal-description research, cartographic communication, Web GIS publishing, and configuration-driven applications. My focus is on dependable GIS applications, data integrity, and scalable systems that serve technical, client, and public audiences.</p>
         </div>
       </section>
 
