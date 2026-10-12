@@ -51,3 +51,5 @@ subprocess.run(["libreoffice", "-env:UserInstallation=file:///tmp/lo-resume-ci",
 if not pdf_path.exists() or pdf_path.stat().st_size < 1000:
     raise RuntimeError("PDF conversion failed")
 print(f"Updated DOCX and PDF: {docx_path}, {pdf_path}")
+
+# Trigger document refresh workflow.
